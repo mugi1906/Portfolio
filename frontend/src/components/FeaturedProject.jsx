@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "./Icons";
 import Reveal from "./Reveal";
+import pr7 from "../assets/pr-7.png"
 
 
 export default function FeaturedProject({ project }) {
@@ -11,7 +12,7 @@ export default function FeaturedProject({ project }) {
         <Reveal>
           <div className="featured-wrap">
             <div className="featured-screen">
-              <img src="/images/pr-7.png" alt="" />
+              <img src={pr7} alt="" />
             </div>
 
             <div className="featured-info">
