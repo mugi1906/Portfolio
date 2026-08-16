@@ -3,7 +3,7 @@ const transporter = require("../config/mail");
 const sendContactMessage = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
-
+    console.log("1");
     // Check all fields
     if (!name || !email || !subject || !message) {
       return res.status(400).json({
@@ -11,14 +11,14 @@ const sendContactMessage = async (req, res) => {
         message: "All fields are required",
       });
     }
-
+    console.log("2");
     // Email details
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `Portfolio Contact - ${subject}`,
-
+      
       text: `
             You received a new message from your portfolio.
 
@@ -30,15 +30,15 @@ const sendContactMessage = async (req, res) => {
             ${message}
         `,
     };
-
+    console.log("3");
     // Send email
     await transporter.sendMail(mailOptions);
-
+    console.log("4");
     res.status(200).json({
       success: true,
       message: "Message sent successfully!",
     });
-
+    console.log("5");
   } catch (error) {
     console.error("Email Error:", error);
 

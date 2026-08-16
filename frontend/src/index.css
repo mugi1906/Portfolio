@@ -434,12 +434,16 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2px;
+
+  pointer-events: auto;
+  position: relative;
+  z-index: 9999;
 }
 
 .mk-mobile-menu a {
   padding: 12px 14px;
   border-radius: var(--radius-sm);
-
+  pointer-events: auto;
   font-weight: 500;
   color: var(--ink);
 }

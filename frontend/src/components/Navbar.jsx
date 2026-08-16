@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MenuIcon, CloseIcon } from "./Icons";
 import { label } from "three/src/nodes/core/ContextNode.js";
 
+
 const LINKS = [
   { number: "01", label: "Home", href: "#home" },
   { number: "02", label: "About", href: "#about" },
@@ -9,7 +10,7 @@ const LINKS = [
   { number: "04", label: "Experience", href: "#experience" },
   { number: "05", label: "Projects", href: "#projects" },
   { number: "06", label: "Education", href: "#education" },
-  { number : "07", label: "Resume" , href : "#resume"},
+  { number: "07", label: "Resume", href: "#resume" },
   { number: "08", label: "Contact", href: "#contact" },
 ];
 
@@ -21,6 +22,19 @@ export default function Navbar() {
   });
 
   const [open, setOpen] = useState(false);
+
+  const handleMobileClick = (href) => {
+    setOpen(false);
+
+    const target = document.querySelector(href);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -112,8 +126,12 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMobileClick(l.href);
+                }}
               >
+                <span>{l.number} // </span>
                 {l.label}
               </a>
             ))}

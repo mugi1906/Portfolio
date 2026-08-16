@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
+import api from "../services/api";
 import Reveal from "./Reveal";
 
 export default function Contact() {
@@ -18,15 +19,9 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await api.post("/api/contact", data);
 
-      const result = await response.json();
+      const result = response.data;
 
       if (result.success) {
         setSent(true);
@@ -36,7 +31,11 @@ export default function Contact() {
       }
     } catch (error) {
       console.error("Contact form error:", error);
-      alert("Unable to send message. Please try again.");
+
+      alert(
+        error.response?.data?.message ||
+        "Unable to send message. Please try again."
+      );
     }
   };
 

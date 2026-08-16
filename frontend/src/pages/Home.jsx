@@ -10,7 +10,6 @@ import GithubSection from "../components/GithubSection";
 import Contact from "../components/Contact";
 import FinalCTA from "../components/FinalCTA";
 import Footer from "../components/Footer";
-
 export default function Home() {
   return (
     <>

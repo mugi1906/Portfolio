@@ -1,17 +1,35 @@
 const express = require("express");
 const cors = require("cors");
-const nodemailer = require("nodemailer");
 const contactRoutes = require("./routes/contactRoutes");
+
 require("dotenv").config();
 
 const app = express();
 
-app.use(cors({
-  origin: process.env.CLIENT_URL,
-  credentials: true,
-}));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://mukilan-portfolio-gamma.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      console.log("CORS Origin:", origin);
+
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error(`CORS blocked: ${origin}`));
+      }
+    },
+    credentials: true,
+  })
+);
+
 app.use(express.json());
+
 app.use("/api", contactRoutes);
+
 app.get("/", (req, res) => {
   res.json({
     message: "Portfolio Backend is running 🚀",
@@ -21,5 +39,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
