@@ -11,7 +11,7 @@ export default function FeaturedProject({ project }) {
         <Reveal>
           <div className="featured-wrap">
             <div className="featured-screen">
-              <img src="/public/images/pr-7.png" alt="" />
+              <img src="/images/images/pr-7.png" alt="" />
             </div>
 
             <div className="featured-info">
