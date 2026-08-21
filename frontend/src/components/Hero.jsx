@@ -123,6 +123,7 @@ export default function Hero() {
                   <span>Node.js</span>
                   <span>MongoDB</span>
                   <span>JavaScript</span>
+                  <span>PHP</span>
                 </div>
               </div>
               <div className="hero-card-float float-a">

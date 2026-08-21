@@ -28,9 +28,20 @@ export default function Skills() {
               <div className="skill-group-title">{group.category}</div>
               <div className="skill-grid">
                 {group.items.map((item) => (
-                  <div key={item} className="mk-card skill-chip">
-                    <span className="ico">{initials(item)}</span>
-                    {item}
+                  <div key={item.name} className="mk-card skill-chip">
+                    <span
+                      className="ico"
+                      style={{
+                        color: item.color,
+                        background: item.bg,
+                      }}
+                    >
+                      {initials(item.name)}
+                    </span>
+
+                    <span style={{ color: item.color }}>
+                      {item.name}
+                    </span>
                   </div>
                 ))}
               </div>

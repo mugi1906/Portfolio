@@ -34,6 +34,12 @@ export default function ProjectCard({ project, onOpen }) {
             <span key={s}>{s}</span>
           ))}
         </div>
+        {project.storePassword && (
+          <div className="proj-password">
+            <span>Store Password:</span>
+            <strong>{project.storePassword}</strong>
+          </div>
+        )}
         <div className="proj-links" onClick={(e) => e.stopPropagation()}>
           {project.live && (
             <a href={project.live} target="_blank" rel="noreferrer" className="live">

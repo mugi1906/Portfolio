@@ -57,7 +57,7 @@ export default function About() {
               </div>
               <div className="info-row">
                 <span className="k">Current Project</span>
-                <span className="v">Employee Management System</span>
+                <span className="v">Employee Management System in Laravel</span>
               </div>
             </div>
           </Reveal>

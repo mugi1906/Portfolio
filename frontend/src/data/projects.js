@@ -6,7 +6,7 @@ const projects = [
     id: "prms",
     title: "Project Review Management System",
     category: "MERN",
-    image : "images/pr-7.png",
+    image: "images/pr-7.png",
     tags: ["MERN"],
     tagline: "Realtime workflow for managing project reviews, developers & reviewers",
     description:
@@ -24,11 +24,12 @@ const projects = [
     priority: 1,
     source: "SDLC Training",
   },
+
   {
     id: "instalant",
     title: "Instalant — Social Media Platform",
     category: "MERN",
-    image : "images/pr-10.png",
+    image: "images/pr-10.png",
     tags: ["MERN"],
     tagline: "A social networking platform with posts, profiles & interaction",
     description:
@@ -44,11 +45,12 @@ const projects = [
     priority: 2,
     source: "CodeAlpha Internship",
   },
+
   {
     id: "project-mgmt-tool",
     title: "Project Management Tool",
     category: "MERN",
-    image : "images/pr-9.png",
+    image: "images/pr-9.png",
     tags: ["MERN"],
     tagline: "Collaborative workspace for projects, tasks & teams",
     description:
@@ -64,11 +66,12 @@ const projects = [
     priority: 3,
     source: "CodeAlpha Internship",
   },
+
   {
     id: "ecommerce-intern",
     title: "E-Commerce Application",
     category: "MERN",
-    image : "images/pr-8.png",
+    image: "images/pr-8.png",
     tags: ["MERN"],
     tagline: "Full-stack storefront with product browsing & cart flow",
     description:
@@ -84,11 +87,12 @@ const projects = [
     priority: 4,
     source: "CodeAlpha Internship",
   },
+
   {
     id: "transport-tracking",
     title: "Transport Tracking Management System",
     category: "Flutter",
-    image : "images/TTMS.jpeg",
+    image: "images/TTMS.jpeg",
     tags: ["Flutter"],
     tagline: "Final-year mobile app for realtime transport tracking",
     description:
@@ -104,11 +108,12 @@ const projects = [
     priority: 5,
     source: "Final Year Project",
   },
+
   {
     id: "task-manager",
     title: "Task Management System",
     category: "React",
-    image : "images/pr-6.png",
+    image: "images/pr-6.png",
     tags: ["React"],
     tagline: "A focused React app for organising day-to-day tasks",
     description:
@@ -123,97 +128,150 @@ const projects = [
     priority: 6,
     source: "Personal Project",
   },
+
   {
     id: "ems",
     title: "Employee Management System",
     category: "PHP",
-    tags: ["PHP"],
-    tagline: "Currently building — employee, attendance & leave management",
+    image: "images/pr-11.png",
+    tags: ["PHP", "MySQL", "jQuery", "AJAX"],
+    tagline: "Employee and department management system with CRUD operations",
     description:
-      "Currently developing a realtime Employee Management System using PHP/Laravel with a focus on employee management, attendance, leave, profile management and administrative workflows.",
+      "A PHP-based Employee Management System developed using CRUD operations for managing employees and departments. The project also includes search and filtering functionality, sessions, cookies, jQuery and AJAX for a more interactive user experience.",
     features: [
-      "Employee profile management (in progress)",
-      "Attendance & leave workflows (in progress)",
-      "Admin dashboard (in progress)",
+      "Employee CRUD operations",
+      "Department management",
+      "Employee search and filtering",
+      "Session and cookie handling",
+      "AJAX-based operations",
+      "jQuery-powered interactions",
+      "MySQL database integration",
     ],
-    stack: ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"],
-    inProgress: true,
+    stack: ["PHP", "MySQL", "jQuery", "AJAX", "HTML", "CSS"],
+    live: "https://employee-management.freehosting.dev/",
+    liveLabel: "Live Demo",
     priority: 7,
-    source: "Currently Building",
+    source: "Personal Project",
   },
+
+  {
+    id: "shopify-mens-store",
+    title: "Men's Online Shopping Store",
+    category: "Shopify",
+    image: "images/pr-12.png",
+    tags: ["Shopify", "Liquid", "HTML/CSS", "JavaScript"],
+    tagline: "Modern men's online shopping store built and customized with Shopify",
+    description:
+      "A men's online shopping website developed and customized using Shopify and Liquid. The store features product listings, collections, product details and shopping functionality with a responsive storefront designed for both desktop and mobile users.",
+    features: [
+      "Product listings and collections",
+      "Product detail pages",
+      "Shopping functionality",
+      "Customized Shopify storefront",
+      "Responsive desktop and mobile design",
+      "Liquid-based theme customization",
+      "User-friendly e-commerce interface",
+    ],
+    stack: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript"],
+    live: "https://onlineshopping-t2xzzf2c.myshopify.com/",
+    liveLabel: "Live Demo",
+    storePassword: "admin",
+    priority: 8,
+    source: "Shopify Project",
+  },
+
   {
     id: "electronic-ecommerce",
     title: "Electronic E-Commerce",
     category: "JavaScript",
-    image : "images/pr-5.png",
+    image: "images/pr-5.png",
     tags: ["JavaScript", "HTML/CSS"],
     tagline: "Frontend electronics storefront concept",
     description:
       "A frontend e-commerce website developed using HTML, CSS and JavaScript.",
-    features: ["Product catalogue layout", "Vanilla JS interactivity"],
+    features: [
+      "Product catalogue layout",
+      "Vanilla JS interactivity",
+    ],
     stack: ["HTML", "CSS", "JavaScript"],
     live: "https://mugi1906.github.io/Electronic-E-Commers/",
-    priority: 8,
+    priority: 9,
     source: "Practice Project",
   },
+
   {
     id: "typewriting",
     title: "TypeWriting Web",
     category: "JavaScript",
-    image : "images/pr-4.png",
+    image: "images/pr-4.png",
     tags: ["JavaScript"],
     tagline: "Typing animation built with dynamic DOM manipulation",
     description:
       "A JavaScript-based typing animation project demonstrating dynamic DOM manipulation and interactive frontend behavior.",
-    features: ["Animated typing effect", "DOM manipulation practice"],
+    features: [
+      "Animated typing effect",
+      "DOM manipulation practice",
+    ],
     stack: ["HTML", "CSS", "JavaScript"],
     live: "https://mugi1906.github.io/type-Writing/",
-    priority: 9,
+    priority: 10,
     source: "Practice Project",
   },
+
   {
     id: "fresh-cart",
     title: "Fresh Cart Website",
     category: "HTML/CSS/Bootstrap",
-    image : "images/pr-3.png",
+    image: "images/pr-3.png",
     tags: ["HTML/CSS/BootStrap"],
     tagline: "Responsive food ordering website",
     description:
       "A responsive food ordering website created using HTML, CSS and Bootstrap.",
-    features: ["Responsive menu layout", "Bootstrap-based grid"],
+    features: [
+      "Responsive menu layout",
+      "Bootstrap-based grid",
+    ],
     stack: ["HTML", "CSS", "Bootstrap"],
     live: "https://mugi1906.github.io/Fresh-Crat-Website-/",
-    priority: 10,
+    priority: 11,
     source: "Practice Project",
   },
+
   {
     id: "organic-food",
     title: "Organic Food Delivery",
     category: "HTML/CSS",
-    image : "images/pr-1.png",
+    image: "images/pr-1.png",
     tags: ["HTML/CSS"],
     tagline: "Static responsive delivery website",
     description:
       "A static responsive organic food delivery website designed using HTML and CSS.",
-    features: ["Static responsive layout", "Section-based design"],
+    features: [
+      "Static responsive layout",
+      "Section-based design",
+    ],
     stack: ["HTML", "CSS"],
     live: "https://mugi1906.github.io/Organic-Food-Delivery/",
-    priority: 11,
+    priority: 12,
     source: "Practice Project",
   },
+
   {
     id: "car-ecommerce",
     title: "Car E-Commerce Website",
     category: "HTML/CSS",
-    image : "images/pr-2.png",
+    image: "images/pr-2.png",
     tags: ["HTML/CSS"],
     tagline: "Product-oriented static car listing site",
     description:
       "A static car e-commerce website created with HTML and CSS with a responsive product-oriented layout.",
-    features: ["Product-oriented layout", "Fully static build"],
+    features: [
+      "Product-oriented layout",
+      "Fully static build",
+    ],
     stack: ["HTML", "CSS"],
     live: "https://mugi1906.github.io/CarWebsite/",
-    priority: 12,
+    priority: 13,
     source: "Practice Project",
   },
 ];
@@ -224,6 +282,7 @@ export const filterCategories = [
   "React",
   "JavaScript",
   "PHP",
+  "Shopify",
   "Flutter",
   "HTML/CSS",
   "HTML/CSS/BootStrap",

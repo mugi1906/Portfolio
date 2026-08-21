@@ -843,12 +843,11 @@ button {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent-ink);
   display: grid;
   place-items: center;
   font-family: var(--font-mono);
   font-size: 12px;
+  font-weight: 700;
   flex-shrink: 0;
 }
 
