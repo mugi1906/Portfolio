@@ -130,6 +130,43 @@ const projects = [
   },
 
   {
+    id: "smart-hrms",
+    title: "Smart Human Resource Management System",
+    category: "Laravel",
+    image: "images/pr-13.png",
+    tags: ["Laravel", "PHP", "MySQL", "Bootstrap", "jQuery", "AJAX"],
+    tagline: "Complete HR management system for employees, attendance, leave & payroll",
+    description:
+      "A web-based Smart Human Resource Management System developed using Laravel to manage employees, departments, attendance, leave requests and payroll details with a secure and user-friendly interface.",
+    features: [
+      "Employee and department CRUD operations",
+      "Attendance management",
+      "Leave application and approval",
+      "Salary and payroll management",
+      "Session and cookie-based authentication",
+      "AJAX-based dynamic operations",
+      "Excel export for management reports",
+      "MySQL database integration",
+    ],
+    stack: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "jQuery",
+      "AJAX",
+    ],
+    live: "YOUR_LARAVEL_LIVE_URL",
+    liveLabel: "Live Demo",
+    github: "https://github.com/mugi1906",
+    priority: 7,
+    source: "Personal Project",
+  },
+
+  {
     id: "ems",
     title: "Employee Management System",
     category: "PHP",
@@ -150,7 +187,7 @@ const projects = [
     stack: ["PHP", "MySQL", "jQuery", "AJAX", "HTML", "CSS"],
     live: "https://employee-management.freehosting.dev/",
     liveLabel: "Live Demo",
-    priority: 7,
+    priority: 8,
     source: "Personal Project",
   },
 
@@ -176,7 +213,7 @@ const projects = [
     live: "https://onlineshopping-t2xzzf2c.myshopify.com/",
     liveLabel: "Live Demo",
     storePassword: "admin",
-    priority: 8,
+    priority: 9,
     source: "Shopify Project",
   },
 
@@ -195,7 +232,7 @@ const projects = [
     ],
     stack: ["HTML", "CSS", "JavaScript"],
     live: "https://mugi1906.github.io/Electronic-E-Commers/",
-    priority: 9,
+    priority: 10,
     source: "Practice Project",
   },
 
@@ -214,7 +251,7 @@ const projects = [
     ],
     stack: ["HTML", "CSS", "JavaScript"],
     live: "https://mugi1906.github.io/type-Writing/",
-    priority: 10,
+    priority: 11,
     source: "Practice Project",
   },
 
@@ -233,7 +270,7 @@ const projects = [
     ],
     stack: ["HTML", "CSS", "Bootstrap"],
     live: "https://mugi1906.github.io/Fresh-Crat-Website-/",
-    priority: 11,
+    priority: 12,
     source: "Practice Project",
   },
 
@@ -252,7 +289,7 @@ const projects = [
     ],
     stack: ["HTML", "CSS"],
     live: "https://mugi1906.github.io/Organic-Food-Delivery/",
-    priority: 12,
+    priority: 13,
     source: "Practice Project",
   },
 
@@ -271,7 +308,7 @@ const projects = [
     ],
     stack: ["HTML", "CSS"],
     live: "https://mugi1906.github.io/CarWebsite/",
-    priority: 13,
+    priority: 14,
     source: "Practice Project",
   },
 ];
@@ -281,7 +318,7 @@ export const filterCategories = [
   "MERN",
   "React",
   "JavaScript",
-  "PHP",
+  "PHP/Laravel",
   "Shopify",
   "Flutter",
   "HTML/CSS",
